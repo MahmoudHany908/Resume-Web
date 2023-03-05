@@ -81,4 +81,15 @@ section{
     padding: 0.9375em 2.1875em;
     letter-spacing: 1px;
     border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color: #303030 ;
+    transform: scale(1.1);
+}
+.social-icons a{
+    color:#454545;
+    font-size:1.7em;;
+    padding-right: 30px ;
 }
