@@ -135,3 +135,58 @@ section{
     font-weight: 700;
     margin:10px;
 }
+.projects{
+    background-color: #202020;
+
+}
+.projects.content{     /*content only of content inside projects not all content class*/
+    margin-top: 30px;
+}
+.project-card {
+    background-color:whitesmoke;
+    border: 1px solid whitesmoke; /*use border instead of shadow and choose a clor for it here,why? cuz the background is not ligh-color so shadows won't make a difference*/
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;      /*use overflow so it doesn't get out of the website*/
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+.project-card:hover .project-image {       /*.project-image, so only the div (the image) will kinda blur or become more transperent*/
+    opacity: 0.9;
+ }
+
+.project-image img{    /* you'll find many examples up as the following one, here we wrote img cuz we need the imagesss inside the div*/
+    width: 100%   /*100 width so the img fits in the whole div*/
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #454545;
+}
+
+.more-details:hover {
+    color: #202020;
+}
