@@ -18,7 +18,7 @@ header{
 }
 .logo{
     text-decoration: none;
-    color: blueviolet;
+    color: #202020;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.8em;
@@ -26,7 +26,7 @@ header{
 
 }
 .navigation a{
-    color: cornflowerblue;
+    color: #878686;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
@@ -35,7 +35,7 @@ header{
 
 }
 .navigation a:hover{
-    color: darkblue;
+    color: #303030;
 }
 section{
     padding: 100px 200px;
@@ -47,7 +47,7 @@ section{
     align-items: center;
     background: url(pics/3\ copy\ 2.jpg) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-attachment: fixed;
 
 }
@@ -91,5 +91,47 @@ section{
 .social-icons a{
     color:#454545;
     font-size:1.7em;;
-    padding-right: 30px ;
+    padding-right: 40px ;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color:#454545;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom:30px;
+
+}
+.content{
+    display: flex;
+    justify-content: center;/*to center my cards*/
+    flex-direction: row;/*row: beside each other, col: below each other vertically*/
+    flex-wrap: wrap;/* to stop cards from minimizing if I change window size*/
+}
+.card{
+    background-color: whitesmoke;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1/ 15%); /*shadow up or (-ve)down, shadow right or (-ve)left, shadow blurred area size, color of shadow(/opacity of shadow)*/
+    border-radius: 10px;
+    padding: 25px;/*distance between paragraphs and the box it's inside*/
+    margin: 15px;/*distance between cards*/
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.icon{
+    color:#454545;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+/*You should center in .info first so the centering in the header work*/
+.info h3{
+    color: #454545;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin:10px;
 }
